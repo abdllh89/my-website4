@@ -16,9 +16,31 @@
 
 
   
-<div style="text-align: center;">
-<iframe src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview" width="800" height="400"  allow="fullscreen" ></iframe>
+<div style="text-align:center;">
+
+  <p style="color:white;">اختر السيرفر:</p>
+
+  <button onclick="changeVideo()" 
+  style="padding:10px; background:#3e2723; color:white;">
+    DRIVE
+  </button>
+
+  <br><br>
+
+  <iframe id="player"
+    src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
+    style="width:90%; max-width:600px; height:300px;"
+    allow="fullscreen">
+  </iframe>
+
 </div>
+
+<script id="srvjs">
+function changeVideo() {
+  document.getElementById("player").src =
+  "https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview";
+}
+</script>
 
 <p><a href="index.html" style="color:yellow;" >الحلقة الأولى</a></p>
 <p><a href="page1.html" style="color:yellow;" >الحلقة الثانية</a></p>
