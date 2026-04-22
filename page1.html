@@ -24,35 +24,44 @@
   
 
 <hr>
-
 <div style="text-align:center;">
 
   <p style="color:white; font-size:20px;">اختر السيرفر:</p>
 
-  <!-- زر السيرفر -->
+  <!-- زر DRIVE -->
   <button onclick="playDrive()" 
   style="padding:10px 20px; background:#3e2723; color:white; border:none; border-radius:5px;">
     DRIVE
   </button>
 
+  <!-- زر UQLOAD -->
+  <button onclick="playUq()" 
+  style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+    UQLOAD
+  </button>
+
   <br><br>
 
-  <!-- مشغل الفيديو -->
+  <!-- المشغل -->
   <iframe id="player"
     src="https://drive.google.com/file/d/1KwJzXC7vgncJl2VP2O3j7Fwg5HETkVmq/preview"
-    style="width:90%; max-width:600px; height:300px;"
-    allow="fullscreen">
+    style="width:90%; max-width:600px; height:300px; border:0;"
+    allowfullscreen>
   </iframe>
 
 </div>
 
-<script id="drivejs">
+<script>
 function playDrive() {
   document.getElementById("player").src =
   "https://drive.google.com/file/d/1KwJzXC7vgncJl2VP2O3j7Fwg5HETkVmq/preview";
 }
+
+function playUq() {
+  document.getElementById("player").src =
+  "https://uqload.is/embed-xleeozk05kph.html";
+}
 </script>
-  
 <hr>
 <p><a href="index.html" style="color:yellow;" >الحلقة الأولى</a></p>
 <p><a href="page1.html" style="color:yellow;" >الحلقة الثانية</a></p>
