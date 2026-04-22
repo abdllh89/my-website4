@@ -15,7 +15,6 @@
     بينما يعيش عمدة البلدة حياة رجل فاضل وخيّر في نفس البلدة التي عاش فيها والد الفتاة، لكنه يخفي وجهًا أكثر بشاعة من العائلة المنافقة.</bra></p>
 
 <hr>
-  
 <div style="text-align:center;">
 
   <p style="color:white; font-size:20px;">اختر السيرفر:</p>
@@ -26,13 +25,19 @@
     DRIVE
   </button>
 
+  <!-- زر LULUSTREAM -->
+  <button onclick="playLulu()" 
+  style="padding:10px 20px; background:#ffd700; color:black; border:none; border-radius:5px; margin-left:10px;">
+    LULUSTREAM
+  </button>
+
   <br><br>
 
   <!-- مشغل الفيديو -->
   <iframe id="player"
     src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
     style="width:90%; max-width:600px; height:300px; border:0;"
-    allow="fullscreen">
+    allowfullscreen>
   </iframe>
 
 </div>
@@ -41,6 +46,11 @@
 function playDrive() {
   document.getElementById("player").src =
   "https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview";
+}
+
+function playLulu() {
+  document.getElementById("player").src =
+  "https://luluvdo.com/e/4eykdv74b4mf";
 }
 </script>
 <hr>
