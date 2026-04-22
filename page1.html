@@ -23,15 +23,37 @@
 
   
 
-<div style="text-align: center;">
-  <iframe 
+<hr>
+
+<div style="text-align:center;">
+
+  <p style="color:white; font-size:20px;">اختر السيرفر:</p>
+
+  <!-- زر السيرفر -->
+  <button onclick="playDrive()" 
+  style="padding:10px 20px; background:#3e2723; color:white; border:none; border-radius:5px;">
+    DRIVE
+  </button>
+
+  <br><br>
+
+  <!-- مشغل الفيديو -->
+  <iframe id="player"
     src="https://drive.google.com/file/d/1KwJzXC7vgncJl2VP2O3j7Fwg5HETkVmq/preview"
-    width="800"
-    height="400"
+    style="width:90%; max-width:600px; height:300px;"
     allow="fullscreen">
   </iframe>
+
 </div>
 
+<script id="drivejs">
+function playDrive() {
+  document.getElementById("player").src =
+  "https://drive.google.com/file/d/1KwJzXC7vgncJl2VP2O3j7Fwg5HETkVmq/preview";
+}
+</script>
+  
+<hr>
 <p><a href="index.html" style="color:yellow;" >الحلقة الأولى</a></p>
 <p><a href="page1.html" style="color:yellow;" >الحلقة الثانية</a></p>
 <p><a href="page2.html" style="color:yellow;">الحلقة الثالثة</a></p>
