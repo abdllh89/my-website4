@@ -14,34 +14,36 @@
   <p style="font-size:30px;"><bra>تتحوَل حياة (كوزيت) السعيدة مع أمها في مدينة باريس إلى حياة بائسة عند عائلة تيناردييه الجشعة، بعد موت أمها،
     بينما يعيش عمدة البلدة حياة رجل فاضل وخيّر في نفس البلدة التي عاش فيها والد الفتاة، لكنه يخفي وجهًا أكثر بشاعة من العائلة المنافقة.</bra></p>
 
-
+<hr>
   
 <div style="text-align:center;">
 
-  <p style="color:white;">اختر السيرفر:</p>
+  <p style="color:white; font-size:20px;">اختر السيرفر:</p>
 
-  <button onclick="changeVideo()" 
-  style="padding:10px; background:#3e2723; color:white;">
+  <!-- زر DRIVE -->
+  <button onclick="playDrive()" 
+  style="padding:10px 20px; background:#3e2723; color:white; border:none; border-radius:5px;">
     DRIVE
   </button>
 
   <br><br>
 
+  <!-- مشغل الفيديو -->
   <iframe id="player"
     src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
-    style="width:90%; max-width:600px; height:300px;"
+    style="width:90%; max-width:600px; height:300px; border:0;"
     allow="fullscreen">
   </iframe>
 
 </div>
 
-<script id="srvjs">
-function changeVideo() {
+<script>
+function playDrive() {
   document.getElementById("player").src =
   "https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview";
 }
 </script>
-
+<hr>
 <p><a href="index.html" style="color:yellow;" >الحلقة الأولى</a></p>
 <p><a href="page1.html" style="color:yellow;" >الحلقة الثانية</a></p>
 <p><a href="page2.html" style="color:yellow;">الحلقة الثالثة</a></p>
