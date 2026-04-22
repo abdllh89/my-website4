@@ -31,12 +31,18 @@
     LULUSTREAM
   </button>
 
+  <!-- زر UQLOAD -->
+  <button onclick="playUq()" 
+  style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+    UQLOAD
+  </button>
+
   <br><br>
 
-  <!-- مشغل الفيديو -->
+  <!-- المشغل -->
   <iframe id="player"
     src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
-    style="width:90%; max-width:600px; height:300px; border:0;"
+    style="width:90%; max-width:700px; height:350px; border:0;"
     allowfullscreen>
   </iframe>
 
@@ -51,6 +57,11 @@ function playDrive() {
 function playLulu() {
   document.getElementById("player").src =
   "https://luluvdo.com/e/4eykdv74b4mf";
+}
+
+function playUq() {
+  document.getElementById("player").src =
+  "https://uqload.is/embed-53eh7mq7psed.html";
 }
 </script>
 <hr>
