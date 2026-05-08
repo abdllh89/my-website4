@@ -3,47 +3,70 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>abdullah melhem</title>
+  <title>البؤساء</title>
 
   <style>
+    body{
+      background-color:#3e2723;
+      margin:0;
+      padding:40px;
+      color:white;
+      direction:rtl;
+      font-family:Arial;
+    }
+
     .container{
-      text-align: center;
+      display:flex;
+      align-items:flex-start;
+      gap:40px; /* مسافة بين الصورة والكلام */
+    }
+
+    .poster{
+      width:300px;
+      border-radius:10px;
+    }
+
+    .content{
+      flex:1;
+    }
+
+    .title{
+      font-size:80px;
+      margin-top:0;
     }
 
     .description{
-      font-size: 30px;
-      color: white;
-      direction: rtl;
-      width: 80%;
-      margin: auto;
-      line-height: 1.8;
+      font-size:32px;
+      line-height:1.8;
     }
   </style>
 </head>
 
-<body style="background-color:#3e2723;">
+<body>
 
   <div class="container">
 
-    <img src="1.jpeg"
-    style="width:300px; display:block; margin:auto;">
+    <!-- الصورة -->
+    <img src="1.jpeg" class="poster">
 
-    <h2 style="color:white; font-size:100px;">
-      البؤساء
-    </h2>
+    <!-- النص -->
+    <div class="content">
 
-    <p class="description">
-      تتحوَل حياة (كوزيت) السعيدة مع أمها في مدينة باريس
-      إلى حياة بائسة عند عائلة تيناردييه الجشعة،
-      بعد موت أمها، بينما يعيش عمدة البلدة حياة رجل
-      فاضل وخيّر في نفس البلدة التي عاش فيها والد الفتاة،
-      لكنه يخفي وجهًا أكثر بشاعة من العائلة المنافقة.
-    </p>
+      <h1 class="title">
+        البؤساء
+      </h1>
+
+      <p class="description">
+        تتحوَل حياة (كوزيت) السعيدة مع أمها في مدينة باريس
+        إلى حياة بائسة عند عائلة تيناردييه الجشعة،
+        بعد موت أمها، بينما يعيش عمدة البلدة حياة رجل
+        فاضل وخيّر في نفس البلدة التي عاش فيها والد الفتاة،
+        لكنه يخفي وجهًا أكثر بشاعة من العائلة المنافقة.
+      </p>
+
+    </div>
 
   </div>
-
-</body>
-</html>
 <hr>
 <div style="text-align:center;">
 
