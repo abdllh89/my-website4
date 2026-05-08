@@ -66,10 +66,59 @@ function playUq() {
 </script>
 <hr>
 
-<summary>الحلقات</summary>
-<div></div><a href="index.html" style="color:yellow;" >الحلقة الأولى</a></div>
-<div><a href="page1.html" style="color:yellow;" >الحلقة الثانية</a></div>
-<div><a href="page2.html" style="color:yellow;">الحلقة الثالثة</a></div>
+<style>
+  .episodes-box{
+    border: 2px solid yellow;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    background: #111;
+  }
+
+  .episode-item{
+    margin-bottom: 12px; /* مسافة بين الـ div */
+  }
+
+  .episode-link{
+    display: block;
+    color: yellow;
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid yellow;
+    border-radius: 6px;
+  }
+
+  .episode-link:hover{
+    background: yellow;
+    color: black;
+  }
+</style>
+
+
+  <summary>الحلقات</summary>
+
+  <div class="episodes-box">
+
+    <div class="episode-item">
+      <a href="index.html" class="episode-link">
+        الحلقة الأولى
+      </a>
+    </div>
+
+    <div class="episode-item">
+      <a href="page1.html" class="episode-link">
+        الحلقة الثانية
+      </a>
+    </div>
+
+    <div class="episode-item">
+      <a href="page2.html" class="episode-link">
+        الحلقة الثالثة
+      </a>
+    </div>
+
+  </div>
+
 
 
 
