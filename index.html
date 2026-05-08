@@ -19,34 +19,38 @@
 
   <p style="color:white; font-size:20px;">اختر السيرفر:</p>
 
-  <!-- زر DRIVE -->
-  <button onclick="playDrive()" 
-   style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
-    DRIVE
-  </button>
+<!-- زر DRIVE -->
+<button onclick="playDrive()" 
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  DRIVE
+</button>
 
-  <!-- زر LULUSTREAM -->
-  <button onclick="playLulu()" 
-  style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
-    LULUSTREAM
-  </button>
+<!-- زر LULUSTREAM -->
+<button onclick="playLulu()" 
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  LULUSTREAM
+</button>
 
-  <!-- زر UQLOAD -->
-  <button onclick="playUq()" 
-  style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
-    UQLOAD
-  </button>
+<!-- زر UQLOAD -->
+<button onclick="playUq()" 
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  UQLOAD
+</button>
 
-  <br><br>
+<!-- زر VOE -->
+<button onclick="playVoe()" 
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  VOE
+</button>
 
-  <!-- المشغل -->
-  <iframe id="player"
-    src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
-    style="width:90%; max-width:700px; height:350px; border:0;"
-    allowfullscreen>
-  </iframe>
+<br><br>
 
-</div>
+<!-- المشغل -->
+<iframe id="player"
+  src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
+  style="width:90%; max-width:700px; height:350px; border:0;"
+  allowfullscreen>
+</iframe>
 
 <script>
 function playDrive() {
@@ -62,6 +66,11 @@ function playLulu() {
 function playUq() {
   document.getElementById("player").src =
   "https://uqload.is/embed-53eh7mq7psed.html";
+}
+
+function playVoe() {
+  document.getElementById("player").src =
+  "https://voe.sx/e/7wvprggim76f";
 }
 </script>
 <hr>
