@@ -70,7 +70,8 @@
   </div>
 <hr>
 <div style="text-align:center;">
-
+  
+<div class="buttons">
   <p style="color:white; font-size:20px;">اختر السيرفر:</p>
 
 <!-- زر DRIVE -->
@@ -97,8 +98,14 @@ style="padding:10px 20px; background:#2196f3; color:white; border:none; border-r
   VOE
 </button>
 
-<br><br>
+  <!-- زر FILES.FM -->
+<button onclick="playFiles()"
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  FILES.FM
+</button>
 
+<br><br>
+  
 <!-- المشغل -->
 <iframe id="player"
   src="https://drive.google.com/file/d/1NIQbG4U5om6OoDxbrqJfKRxvQ_0bUEd2/preview"
@@ -106,11 +113,10 @@ style="padding:10px 20px; background:#2196f3; color:white; border:none; border-r
   allowfullscreen>
 </iframe>
 
-  <!-- زر FILES.FM -->
-<button onclick="playFiles()"
-style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
-  FILES.FM
-</button>
+
+  <br><br>
+
+  </div>
 
 <script>
 function playDrive() {
