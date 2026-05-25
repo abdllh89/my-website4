@@ -106,6 +106,12 @@ style="padding:10px 20px; background:#2196f3; color:white; border:none; border-r
   allowfullscreen>
 </iframe>
 
+  <!-- زر FILES.FM -->
+<button onclick="playFiles()"
+style="padding:10px 20px; background:#2196f3; color:white; border:none; border-radius:5px; margin-left:10px;">
+  FILES.FM
+</button>
+
 <script>
 function playDrive() {
   document.getElementById("player").src =
@@ -125,6 +131,11 @@ function playUq() {
 function playVoe() {
   document.getElementById("player").src =
   "https://voe.sx/e/7wvprggim76f";
+}
+
+  function playFiles() {
+  document.getElementById("player").src =
+  "https://files.fm/f/du6k7uzvs6?hide_header=true&hide_menus=false";
 }
 </script>
 <hr>
